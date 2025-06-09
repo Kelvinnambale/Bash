@@ -1,4 +1,5 @@
-# NamsTech Linux System Information Report Generator
+# NamsTech Digital Solutions
+## Linux System Information Report Generator
 
 A comprehensive Linux system information report generator that creates detailed HTML and PDF reports containing system hardware, performance, network, security, and configuration information.
 
@@ -40,12 +41,25 @@ A comprehensive Linux system information report generator that creates detailed 
 
 ## 🔧 Installation
 
-### Method 1: Direct Download and Setup
+### Method 1: Clone from GitHub (Recommended)
 ```bash
-# Download the script
-wget https://your-domain.com/system_report.sh
-# or
-curl -O https://your-domain.com/system_report.sh
+# Clone the repository
+git clone https://github.com/Kelvinnambale/Bash.git
+
+# Navigate to the project directory
+cd Bash
+
+# Make the script executable
+chmod +x system_report.sh
+
+# Run the script
+sudo ./system_report.sh
+```
+
+### Method 2: Direct Download
+```bash
+# Download the script directly
+wget https://raw.githubusercontent.com/Kelvinnambale/Bash/main/system_report.sh
 
 # Make it executable
 chmod +x system_report.sh
@@ -54,7 +68,7 @@ chmod +x system_report.sh
 sudo ./system_report.sh
 ```
 
-### Method 2: Manual Setup
+### Method 3: Manual Setup
 1. Save the script content to a file named `system_report.sh`
 2. Make it executable:
    ```bash
@@ -67,6 +81,10 @@ sudo ./system_report.sh
 
 ### Method 3: System-wide Installation
 ```bash
+# First, clone the repository
+git clone https://github.com/Kelvinnambale/Bash.git
+cd Bash
+
 # Copy to system binary directory
 sudo cp system_report.sh /usr/local/bin/system-report
 
@@ -77,17 +95,34 @@ sudo chmod +x /usr/local/bin/system-report
 sudo system-report
 ```
 
+## 📦 Repository Information
+
+- **GitHub Repository**: [https://github.com/Kelvinnambale/Bash](https://github.com/Kelvinnambale/Bash)
+- **Direct Script URL**: `https://raw.githubusercontent.com/Kelvinnambale/Bash/main/system_report.sh`
+- **Clone Command**: `git clone https://github.com/Kelvinnambale/Bash.git`
+
 ## 📖 Usage
 
 ### Basic Usage
 ```bash
+# If cloned from GitHub
+cd Bash
+sudo ./system_report.sh
+
+# If installed system-wide
+sudo system-report
+
+# If downloaded directly
 sudo ./system_report.sh
 ```
 
 ### Step-by-Step Process
 
-1. **Run the Script**:
+1. **Clone and Run the Script**:
    ```bash
+   git clone https://github.com/Kelvinnambale/Bash.git
+   cd Bash
+   chmod +x system_report.sh
    sudo ./system_report.sh
    ```
 
@@ -282,11 +317,15 @@ wkhtmltopdf --version
 
 ### Automated Execution
 ```bash
+# Clone the repository first
+git clone https://github.com/Kelvinnambale/Bash.git
+
 # Create automated script
 cat > /etc/cron.weekly/system-report << 'EOF'
 #!/bin/bash
 # Automated system report generation
-echo -e "Admin Name\nadmin@company.com\nIT Department\nCompany Inc\n*\n3\n" | sudo /usr/local/bin/system_report.sh
+cd /opt/Bash
+echo -e "Admin Name\nadmin@company.com\nIT Department\nCompany Inc\n*\n3\n" | sudo ./system_report.sh
 EOF
 
 chmod +x /etc/cron.weekly/system-report
@@ -294,6 +333,10 @@ chmod +x /etc/cron.weekly/system-report
 
 ### Custom Report Locations
 ```bash
+# Clone repository first
+git clone https://github.com/Kelvinnambale/Bash.git
+cd Bash
+
 # Create custom report directory
 sudo mkdir -p /opt/system-reports
 sudo chown $(whoami):$(whoami) /opt/system-reports
@@ -304,6 +347,11 @@ sudo ./system_report.sh
 ```
 
 ## 📞 Support and Contribution
+
+### Repository Links
+- **Main Repository**: [https://github.com/Kelvinnambale/Bash](https://github.com/Kelvinnambale/Bash)
+- **Issues**: [https://github.com/Kelvinnambale/Bash/issues](https://github.com/Kelvinnambale/Bash/issues)
+- **Contributions**: Fork the repository and submit pull requests
 
 ### Getting Help
 - Check the troubleshooting section above
