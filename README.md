@@ -56,19 +56,7 @@ chmod +x system_report1.sh
 sudo ./system_report1.sh
 ```
 
-### Method 2: Direct Download
-```bash
-# Download the script directly
-wget https://github.com/Kelvinnambale/Bash/system_report1.sh
-
-# Make it executable
-chmod +x system_report1.sh
-
-# Run the script
-sudo ./system_report1.sh
-```
-
-### Method 3: Manual Setup
+### Method 2: Manual Setup
 1. Save the script content to a file named `system_report.sh`
 2. Make it executable:
    ```bash
