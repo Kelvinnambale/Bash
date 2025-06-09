@@ -59,7 +59,7 @@ sudo ./system_report1.sh
 ### Method 2: Direct Download
 ```bash
 # Download the script directly
-wget https://github.com/Kelvinnambale/Bash/main/system_report1.sh
+wget https://github.com/Kelvinnambale/Bash/system_report1.sh
 
 # Make it executable
 chmod +x system_report1.sh
