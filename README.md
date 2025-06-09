@@ -50,29 +50,29 @@ git clone https://github.com/Kelvinnambale/Bash.git
 cd Bash
 
 # Make the script executable
-chmod +x system_report.sh
+chmod +x system_report1.sh
 
 # Run the script
-sudo ./system_report.sh
+sudo ./system_report1.sh
 ```
 
 ### Method 2: Direct Download
 ```bash
 # Download the script directly
-wget https://raw.githubusercontent.com/Kelvinnambale/Bash/main/system_report.sh
+wget https://github.com/Kelvinnambale/Bash/main/system_report1.sh
 
 # Make it executable
-chmod +x system_report.sh
+chmod +x system_report1.sh
 
 # Run the script
-sudo ./system_report.sh
+sudo ./system_report1.sh
 ```
 
 ### Method 3: Manual Setup
 1. Save the script content to a file named `system_report.sh`
 2. Make it executable:
    ```bash
-   chmod +x system_report.sh
+   chmod +x system_report1.sh
    ```
 3. Run with sudo privileges:
    ```bash
@@ -98,7 +98,7 @@ sudo system-report
 ## 📦 Repository Information
 
 - **GitHub Repository**: [https://github.com/Kelvinnambale/Bash](https://github.com/Kelvinnambale/Bash)
-- **Direct Script URL**: `https://raw.githubusercontent.com/Kelvinnambale/Bash/main/system_report.sh`
+- **Direct Script URL**: `https://github.com/Kelvinnambale/Bash/main/system_report1.sh`
 - **Clone Command**: `git clone https://github.com/Kelvinnambale/Bash.git`
 
 ## 📖 Usage
@@ -325,7 +325,7 @@ cat > /etc/cron.weekly/system-report << 'EOF'
 #!/bin/bash
 # Automated system report generation
 cd /opt/Bash
-echo -e "Admin Name\nadmin@company.com\nIT Department\nCompany Inc\n*\n3\n" | sudo ./system_report.sh
+echo -e "Admin Name\nadmin@company.com\nIT Department\nCompany Inc\n*\n3\n" | sudo ./system_report1.sh
 EOF
 
 chmod +x /etc/cron.weekly/system-report
